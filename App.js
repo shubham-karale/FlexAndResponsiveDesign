@@ -1,20 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import FlexBox from './components/FlexBox';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style = {{flex:1}}>
+
+    <Text style = {styles.heading}>FlexBox Responsive Design</Text> 
+
+    <FlexBox />
+    
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  heading : {
+    fontSize : 30,
+    fontWeight : 'bold',
+    textAlign : 'center',
+    marginTop : 40,
+    marginBottom : 20,
+    color : 'blue'
+    
+}
 });
